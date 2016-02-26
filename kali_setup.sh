@@ -15,7 +15,7 @@ function pause(){
 function installationPrompt(){
 	printf "\n"
 	echo "########################################################"
-	printf "			Installing %s\n" $1
+	printf "	 Installing %s\n" $1
 	echo "########################################################"
 	printf "\n"
 }
