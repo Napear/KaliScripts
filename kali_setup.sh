@@ -38,6 +38,9 @@ if [[ $1 == '--full' ]]; then
 	msfdb init
 fi
 
+#MITMF
+apt-get install mitmf mitmproxy
+
 # HTTPScreenShot
 installationPrompt HTTPScreenShot
 pip install selenium
