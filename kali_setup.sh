@@ -117,3 +117,8 @@ cd /opt/PowerSploit && wget https://raw.githubusercontent.com/obscuresec/random/
 installationPrompt Veil
 git clone https://github.com/Veil-Framework/Veil /opt/Veil
 cd /opt/Veil/ && ./Install.sh -c
+
+apt-get auto-clean && apt-get auto-remove
+printf "\n\n\Preparing for system reboot"
+pause
+init 6
