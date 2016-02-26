@@ -28,13 +28,9 @@ if [[ $1 == '--full' ]]; then
 	# deb http://http.kali.org/kali kali-rolling main non-free contrib
 	# EOF
 	echo "Change password..."
-	passwd
-	echo "Change hostname from Kali to... something else."
-	pause
-	nano /etc/hostname
-	ehco "... and agian"
-	pause
-	nano /etc/hosts
+	passwd	
+	sed -i 's/kali/android-66756b6e6b616c69/g' /etc/hostname
+	sed -i 's/kali/android-66756b6e6b616c69/g' /etc/hosts	
 	apt-get update
 	apt-get upgrade -y
 	apt-get dist-upgrade -y
