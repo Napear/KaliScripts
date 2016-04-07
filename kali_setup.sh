@@ -34,9 +34,9 @@ if [[ $1 == '--full' ]]; then
 	apt-get update
 	apt-get upgrade -y
 	apt-get dist-upgrade -y
+	apt-get install -y gdebi htop nethogs chromium lynx irssi tor
 	service postgresql start
 	msfdb init
-	apt-get install -y gdebi htop nethogs chromium lynx irssi
 fi
 
 #MITMF
