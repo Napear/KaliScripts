@@ -36,6 +36,7 @@ if [[ $1 == '--full' ]]; then
 	apt-get dist-upgrade -y
 	service postgresql start
 	msfdb init
+	apt-get install -y gdebi htop nethogs chromium lynx irssi
 fi
 
 #MITMF
