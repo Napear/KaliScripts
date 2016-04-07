@@ -56,7 +56,7 @@ git clone https://github.com/pentestgeek/smbexec.git /opt/smbexec
 printf "\nSelect Option 1 and accept all defaults to start installation\n"
 pause
 cd /opt/smbexec && ./install.sh
-printf "\nSelect Option 4 to complete installation, then 5 to exit"
+printf "\nSelect Option 4 to complete installation, then 5 to exit\n"
 pause
 ./install.sh
 
